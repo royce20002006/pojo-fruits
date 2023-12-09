@@ -71,6 +71,12 @@ NOTE: Call a function you previously wrote as a helper function.
 */
 
 function getFruitKeys(fruits) {
+    let arr = [];
+    let fruit = fruits[0];
+    for (let key in fruit) {
+        arr.push(key);
+    }
+    return arr;
    
     // Your code here 
 }
@@ -86,7 +92,8 @@ console.log(getNutritionsKeys(fruits));
 */
 
 function getNutritionsKeys(fruits) {
-    // Your code here 
+   
+   return Object.keys(fruits[0].nutritions);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
