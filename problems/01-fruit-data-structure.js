@@ -11,6 +11,7 @@ console.log(firstFruitObject(fruits));
 
 function firstFruitObject(fruits) {
     // Your code here 
+    return fruits[0];
 }
 
 
@@ -25,6 +26,7 @@ console.log(lastFruitObject(fruits));
 
 function lastFruitObject(fruits) {
     // Your code here 
+    return fruits[fruits.length - 1]
 }
 
 
@@ -40,12 +42,12 @@ console.log(indexFruitObject(17, fruits));
 
 function indexFruitObject(index, fruits) {
     // Your code here 
+    return fruits[index];
 }
 
 
 /* 04. `fruitNames()` - Return a list of all of the fruit names
 
-console.log(fruitNames(fruits));
 // [ 'Apple', 'Apricot', 'Banana', 'Blackberry', 'Blueberry', 'Cherry', 'Durian',
     'Fig', 'Gooseberry', 'Grapes', 'GreenApple', 'Guava', 'Kiwi', 'Lemon',
     'Lime', 'Lingonberry', 'Lychee', 'Mango', 'Melon', 'Orange', 'Papaya',
@@ -54,7 +56,11 @@ console.log(fruitNames(fruits));
 */
 
 function fruitNames(fruits) {
-    // Your code here 
+   let arr = [];
+   fruits.forEach((fruit) => {
+    arr.push(fruit.name);
+   })
+   return arr;
 }
 
 /* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
@@ -65,6 +71,7 @@ NOTE: Call a function you previously wrote as a helper function.
 */
 
 function getFruitKeys(fruits) {
+   
     // Your code here 
 }
 
